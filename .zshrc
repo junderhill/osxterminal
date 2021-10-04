@@ -51,7 +51,18 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git ruby gem history history-substring-search terminalapp brew)
+plugins=(
+  git
+  docker
+  dotnet
+  tmux
+  aws
+  vi-mode
+  thefuck
+  history 
+  history-substring-search 
+  terminalapp 
+  brew)
 
 source $ZSH/oh-my-zsh.sh
 

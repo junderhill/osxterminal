@@ -47,6 +47,9 @@ ZSH_THEME="robbyrussell"
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
 
+#Enable vi mode
+bindkey -v
+
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
@@ -61,9 +64,9 @@ plugins=(
   thefuck
   history 
   history-substring-search 
-  terminalapp 
   brew)
 
+eval $(thefuck --alias)
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
